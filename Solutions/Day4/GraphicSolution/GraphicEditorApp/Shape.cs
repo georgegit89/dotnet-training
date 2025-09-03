@@ -11,6 +11,7 @@ public enum Color
 
 public abstract class Shape
 {
-   protected int thickness { get; set; }
-   protected Color shapeColor { get; set; }
+   protected int Thickness { get; set; }
+   protected Color ShapeColor { get; set; }
+   public abstract void Draw();
 }
