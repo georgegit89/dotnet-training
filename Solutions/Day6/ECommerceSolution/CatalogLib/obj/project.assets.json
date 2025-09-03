@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net8.0": []
   },
   "packageFolders": {
     "C:\\Users\\george.james\\.nuget\\packages\\": {}
@@ -13,24 +13,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day4\\ECommerceSolution\\CatalogLib\\CatalogLib.csproj",
+      "projectUniqueName": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day6\\ECommerceSolution\\CatalogLib\\CatalogLib.csproj",
       "projectName": "CatalogLib",
-      "projectPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day4\\ECommerceSolution\\CatalogLib\\CatalogLib.csproj",
+      "projectPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day6\\ECommerceSolution\\CatalogLib\\CatalogLib.csproj",
       "packagesPath": "C:\\Users\\george.james\\.nuget\\packages\\",
-      "outputPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day4\\ECommerceSolution\\CatalogLib\\obj\\",
+      "outputPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day6\\ECommerceSolution\\CatalogLib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\george.james\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net9.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -47,8 +47,8 @@
       "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
-      "net9.0": {
-        "targetAlias": "net9.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
