@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "OnlineShoppingPortal/1.0.0": {
+        "runtime": {
+          "OnlineShoppingPortal.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlineShoppingPortal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -4,9 +4,6 @@
     "net8.0": {
       "Microsoft.AspNetCore.OpenApi/9.0.8": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.OpenApi": "1.6.17"
-        },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
             "related": ".xml"
@@ -15,22 +12,6 @@
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
             "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Microsoft.OpenApi/1.6.17": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
-            "related": ".pdb;.xml"
           }
         }
       }
@@ -52,21 +33,6 @@
         "microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
-    },
-    "Microsoft.OpenApi/1.6.17": {
-      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
-      "type": "package",
-      "path": "microsoft.openapi/1.6.17",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/netstandard2.0/Microsoft.OpenApi.dll",
-        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
-        "lib/netstandard2.0/Microsoft.OpenApi.xml",
-        "microsoft.openapi.1.6.17.nupkg.sha512",
-        "microsoft.openapi.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -80,11 +46,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day4\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj",
+      "projectUniqueName": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day6\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj",
       "projectName": "ECommerceWebApi",
-      "projectPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day4\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj",
+      "projectPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day6\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj",
       "packagesPath": "C:\\Users\\george.james\\.nuget\\packages\\",
-      "outputPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day4\\ECommerceSolution\\ECommerceWebApi\\obj\\",
+      "outputPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day6\\ECommerceSolution\\ECommerceWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\george.james\\AppData\\Roaming\\NuGet\\NuGet.Config"

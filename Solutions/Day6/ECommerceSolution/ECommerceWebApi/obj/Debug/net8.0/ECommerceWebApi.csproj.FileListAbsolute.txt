@@ -1,0 +1,7 @@
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day6\ECommerceSolution\ECommerceWebApi\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day6\ECommerceSolution\ECommerceWebApi\obj\Debug\net8.0\ECommerceWebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day6\ECommerceSolution\ECommerceWebApi\obj\Debug\net8.0\ECommerceWebApi.AssemblyInfoInputs.cache
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day6\ECommerceSolution\ECommerceWebApi\obj\Debug\net8.0\ECommerceWebApi.AssemblyInfo.cs
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day6\ECommerceSolution\ECommerceWebApi\obj\Debug\net8.0\ECommerceWebApi.csproj.CoreCompileInputs.cache
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day6\ECommerceSolution\ECommerceWebApi\obj\Debug\net8.0\ECommerceWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day6\ECommerceSolution\ECommerceWebApi\obj\Debug\net8.0\ECommerceWebApi.sourcelink.json

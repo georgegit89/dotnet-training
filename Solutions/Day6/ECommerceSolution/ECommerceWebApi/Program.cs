@@ -1,41 +1,62 @@
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+//Cors enabling
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+//Request Processing Logic
 
-app.UseHttpsRedirection();
-
-var summaries = new[]
+//rest API  with HTTP Get Request using minimal APIs
+app.MapGet("/hello", () =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+    return "Hello World!";
+});
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/api/products", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    return new[]
+    {
+        new { Id = 1, Name = "Gerbera", Price = 9.99 },
+        new { Id = 2, Name = "Rose", Price = 19.99 },
+        new { Id = 3, Name = "Tulip", Price = 29.99 }
+    };
+});
+
+app.MapPost("/api/products", (dynamic product) =>
+{
+    // Logic to add the product
+    // Serialization
+    //Mongo DB
+
+    return Results.Created($"/api/products/{product.Id}", product);
+});
+
+app.MapPut("/api/products/{id}", (int id, dynamic product) =>
+{
+    // Logic to update the product
+    // Serialization
+    //Mongo DB
+
+    return Results.Ok(product);
+});
+
+app.MapDelete("/api/products/{id}", (int id) =>
+{
+    // Logic to delete the product
+    // Mongo DB
+
+
+    return Results.NoContent();
+});
+
+
+
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day4\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj": {}
+    "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day6\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj": {}
   },
   "projects": {
-    "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day4\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj": {
+    "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day6\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day4\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj",
+        "projectUniqueName": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day6\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj",
         "projectName": "ECommerceWebApi",
-        "projectPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day4\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj",
+        "projectPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day6\\ECommerceSolution\\ECommerceWebApi\\ECommerceWebApi.csproj",
         "packagesPath": "C:\\Users\\george.james\\.nuget\\packages\\",
-        "outputPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day4\\ECommerceSolution\\ECommerceWebApi\\obj\\",
+        "outputPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day6\\ECommerceSolution\\ECommerceWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\george.james\\AppData\\Roaming\\NuGet\\NuGet.Config"
