@@ -47,7 +47,4 @@ app.MapDelete("/api/products/{id}", (int id) =>
     return Results.NoContent();
 });
 
-
-
-
 app.Run();
