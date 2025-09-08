@@ -1,0 +1,12 @@
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\bin\Debug\net9.0\Controllers.deps.json
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\bin\Debug\net9.0\Controllers.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\bin\Debug\net9.0\Controllers.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\Controllers.GeneratedMSBuildEditorConfig.editorconfig
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\Controllers.AssemblyInfoInputs.cache
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\Controllers.AssemblyInfo.cs
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\Controllers.csproj.CoreCompileInputs.cache
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\Controllers.sourcelink.json
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\Controllers.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\refint\Controllers.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\Controllers.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\ref\Controllers.dll
