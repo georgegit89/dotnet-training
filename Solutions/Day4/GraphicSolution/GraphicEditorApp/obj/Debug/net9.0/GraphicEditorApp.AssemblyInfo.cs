@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GraphicEditorApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4263504f2de7c9ef8c77fd5ac58a9973008e39c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c40f0c147002e7cafaf9191262d85ee1bc5d41d")]
 [assembly: System.Reflection.AssemblyProductAttribute("GraphicEditorApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GraphicEditorApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
