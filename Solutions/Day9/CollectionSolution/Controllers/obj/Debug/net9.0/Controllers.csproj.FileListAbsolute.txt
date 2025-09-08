@@ -10,3 +10,9 @@ C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\Coll
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\refint\Controllers.dll
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\Controllers.pdb
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\ref\Controllers.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\Controllers.csproj.AssemblyReference.cache
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\bin\Debug\net9.0\Entities.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\bin\Debug\net9.0\Repositories.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\bin\Debug\net9.0\Entities.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\bin\Debug\net9.0\Repositories.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\Controllers\obj\Debug\net9.0\Controll.01F35609.Up2Date
