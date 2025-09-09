@@ -6,7 +6,6 @@ C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\Coll
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\WebApi.runtimeconfig.json
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\WebApi.dll
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\WebApi.pdb
-C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\Services.dll
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\Services.pdb
@@ -37,3 +36,6 @@ C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\Coll
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\Repositories.dll
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\Entities.pdb
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\Repositories.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day9\CollectionSolution\WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
