@@ -1,11 +1,15 @@
-﻿namespace Repositories;
-using entities;
+﻿
+namespace Repositories;
 
-    public interface IProductRepository
-    {
-        IEnumerable<Product> GetAllProduct();
-        Product GetProductById(int id);
-        void AddProduct(Product product);
-        void UpdateProduct(Product product);
-        void DeleteProduct(Product product);
-    }
+using Entities;
+using System.Collections.Generic;
+public interface IProductRepository
+{
+
+    IEnumerable<Product> GetAllProducts();
+    Product AddProduct(Product product);
+    Product GetProductById(int id);
+    // void AddProduct(Product product);
+    bool UpdateProduct(int id, Product prod);
+    bool DeleteProduct(int id);
+}

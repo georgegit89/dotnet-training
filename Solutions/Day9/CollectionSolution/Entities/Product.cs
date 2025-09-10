@@ -1,4 +1,4 @@
-﻿namespace entities;
+﻿namespace Entities;
 
 using System.Collections.Generic;
 

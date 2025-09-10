@@ -1,38 +1,49 @@
-﻿namespace Services;
-using Repositories;
-using entities;
-
-public class ProductService
+﻿﻿
+namespace Services
 {
-    private readonly IProductRepository _productRepository;
+    using Entities;
+    using Repositories;
 
-    public ProductService(IProductRepository productRepository)
+    public class ProductService: IProductService
     {
-        _productRepository = productRepository;
-    }
+        private readonly IProductRepository _productRepository;
 
-    public IEnumerable<Product> GetAllProducts()
-    {
-        return _productRepository.GetAllProduct();
-    }
+        public ProductService(IProductRepository productRepository)
+        {
+            _productRepository = productRepository;
+        }
 
-    public Product GetProductById(int id)
-    {
-        return _productRepository.GetProductById(id);
-    }
+        public IEnumerable<Product> GetAllProducts()
+        {
 
-    public void AddProduct(Product product)
-    {
-        _productRepository.AddProduct(product);
-    }
+            return _productRepository.GetAllProducts();
+        }
 
-    public void UpdateProduct(Product product)
-    {
-        _productRepository.UpdateProduct(product);
-    }
+        public Product GetProductById(int id)
+        {
+            return _productRepository.GetProductById(id);
+        }
 
-    public void DeleteProduct(Product product)
-    {
-        _productRepository.DeleteProduct(product);
+        public Product AddProduct(Product product)
+        {
+            // you can add business validations here
+            if (string.IsNullOrWhiteSpace(product.Title))
+                throw new ArgumentException("Product titl is required");
+
+            if (product.Price <= 0)
+                throw new ArgumentException("Price must be greater than zero");
+
+            return _productRepository.AddProduct(product);
+        }
+
+        public bool UpdateProduct(int id, Product updatedProduct)
+        {
+            return _productRepository.UpdateProduct(id, updatedProduct);
+        }
+
+        public bool DeleteProduct(int id)
+        {
+            return _productRepository.DeleteProduct(id);
+        }
     }
 }
