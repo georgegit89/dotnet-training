@@ -95,3 +95,11 @@ C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\Tra
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\TransflowSolution\Portal\obj\Debug\net9.0\Portal.pdb
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\TransflowSolution\Portal\obj\Debug\net9.0\Portal.genruntimeconfig.cache
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\TransflowSolution\Portal\obj\Debug\net9.0\ref\Portal.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\TransflowSolution\Portal\obj\Debug\net9.0\Portal.csproj.AssemblyReference.cache
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\TransflowSolution\Portal\bin\Debug\net9.0\Entities.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\TransflowSolution\Portal\bin\Debug\net9.0\Repositories.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\TransflowSolution\Portal\bin\Debug\net9.0\Services.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\TransflowSolution\Portal\bin\Debug\net9.0\Entities.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\TransflowSolution\Portal\bin\Debug\net9.0\Services.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\TransflowSolution\Portal\bin\Debug\net9.0\Repositories.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Day13\TransflowSolution\Portal\obj\Debug\net9.0\Portal.csproj.Up2Date

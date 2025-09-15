@@ -1,5 +1,8 @@
 using Services;
 using Entities;
+using Microsoft.AspNetCore.Mvc;
+namespace Portal.Controllers;
+
 public class ProductController : Controller
 {
    private readonly IProductService _productService;
@@ -43,7 +46,7 @@ public class ProductController : Controller
       {
          return View(product);
       }
-      _productService.UpdateProduct(product);
+      _productService.UpdateProduct(0,product);
       return RedirectToAction("Index");
    }
 
@@ -53,4 +56,5 @@ public class ProductController : Controller
       _productService.DeleteProduct(id);
       return RedirectToAction("Index");
    }
+   
 }
