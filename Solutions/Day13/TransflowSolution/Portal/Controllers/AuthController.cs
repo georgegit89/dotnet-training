@@ -2,7 +2,10 @@ using Portal.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Portal.Controllers;
+
 using Repositories;
+using Services;
+using Entities;
 public class AuthController : Controller
 {
    public readonly IRegisterService _registerService;
@@ -34,7 +37,7 @@ public class AuthController : Controller
    {
       // Registration logic would go here
       // For now, just redirect to products page
-      Register reg = new Register()
+      UserRegistration reg = new UserRegistration()
       {
          FirstName = firstname,
          LastName = lastname,
