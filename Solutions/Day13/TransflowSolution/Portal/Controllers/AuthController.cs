@@ -2,13 +2,14 @@ using Portal.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Portal.Controllers;
-
+using Repositories;
 public class AuthController : Controller
 {
+   public readonly IRegisterService _registerService;
    // Authentication related actions would go here
-   public AuthController()
+   public AuthController(IRegisterService registerService)
    {
-
+      _registerService = registerService;
    }
    [HttpGet]
    public IActionResult Login()
@@ -33,7 +34,14 @@ public class AuthController : Controller
    {
       // Registration logic would go here
       // For now, just redirect to products page
-      this.Response.Redirect("/Products/Index");
+      Register reg = new Register()
+      {
+         FirstName = firstname,
+         LastName = lastname,
+         Email = email,
+         Password = password
+      };
+      _registerService.RegisterUser(reg);
       return View();
    }
 }
