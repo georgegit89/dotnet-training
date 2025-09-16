@@ -3,21 +3,21 @@ namespace Repositories;
 using Entities;
 public class RegisterRepository : IRegisterRepository
 {
-   public IEnumerable<UserRegisteration> GetAllProducts()
+   public IEnumerable<UserRegistration> GetAllUsers()
    {
       return JSONRegisterationManager.LoadUsers();
    }
 
-   public void RegisterUser(UserRegisteration user)
+   public void RegisterUser(UserRegistration user)
    {
-      var users = JSONRegisterationManager.LoadUsers();
+      var users = GetAllUsers().ToList();
       users.Add(user);
       JSONRegisterationManager.SaveUsers(users);
    }
 
-   public void UpdateUser(string email, UserRegisteration updatedUser)
+   public void UpdateUser(string email, UserRegistration updatedUser)
    {
-      var users = JSONRegisterationManager.LoadUsers();
+      var users = GetAllUsers().ToList();
       var index = users.FindIndex(u => u.Email == email);
       if (index != -1)
       {
@@ -26,6 +26,7 @@ public class RegisterRepository : IRegisterRepository
    }
    public void DeleteUser(string email)
    {
+      var users = GetAllUsers().ToList();
       var user = users.FirstOrDefault(u => u.Email == email);
       if (user != null)
       {

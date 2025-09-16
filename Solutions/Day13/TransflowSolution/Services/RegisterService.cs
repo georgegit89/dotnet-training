@@ -1,5 +1,7 @@
 namespace Services;
+
 using Entities;
+using Repositories;
 public class RegisterService : IRegisterService
 {
    private readonly IRegisterRepository _registerRepository;
@@ -9,9 +11,9 @@ public class RegisterService : IRegisterService
       _registerRepository = registerRepository;
    }
 
-   public void RegisterUser(UserRegisteration userRegistration)
+   public void RegisterUser(UserRegistration userRegistration)
    {
-      var user = new User
+      var user = new UserRegistration
       {
          FirstName = userRegistration.FirstName,
          LastName = userRegistration.LastName,
@@ -21,9 +23,9 @@ public class RegisterService : IRegisterService
       _registerRepository.RegisterUser(user);
    }
 
-   public void UpdateUser(string email, UserRegisteration updatedUserRegistration)
+   public void UpdateUser(string email, UserRegistration updatedUserRegistration)
    {
-      var updatedUser = new User
+      var updatedUser = new UserRegistration
       {
          FirstName = updatedUserRegistration.FirstName,
          LastName = updatedUserRegistration.LastName,
