@@ -23,9 +23,17 @@ public class AuthController : Controller
       this.Response.Redirect("/Products/Index");
       return View();
    }
-
+   [HttpGet]
    public IActionResult Register()
    {
+      return View();
+   }
+   [HttpPost]
+   public IActionResult Register(string firstname, string lastname, string email, string password)
+   {
+      // Registration logic would go here
+      // For now, just redirect to products page
+      this.Response.Redirect("/Products/Index");
       return View();
    }
 }

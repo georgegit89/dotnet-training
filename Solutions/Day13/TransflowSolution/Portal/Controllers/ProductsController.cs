@@ -3,19 +3,22 @@ using Entities;
 using Microsoft.AspNetCore.Mvc;
 namespace Portal.Controllers;
 
-public class ProductController : Controller
+public class ProductsController : Controller
 {
    private readonly IProductService _productService;
 
-   public ProductController(IProductService productService)
+   public ProductsController(IProductService productService)
    {
       _productService = productService;
    }
 
    public IActionResult Index()
    {
+
       var products = _productService.GetAllProducts();
-      return View(products);
+      Console.WriteLine("Products retrieved: " + products.Count());
+      Console.WriteLine("Products retrieved: " + products);
+      return View(products);// Pass the products to the view
    }
 
    public IActionResult Details(int id)
@@ -46,7 +49,7 @@ public class ProductController : Controller
       {
          return View(product);
       }
-      _productService.UpdateProduct(0,product);
+      _productService.UpdateProduct(0, product);
       return RedirectToAction("Index");
    }
 
@@ -56,5 +59,5 @@ public class ProductController : Controller
       _productService.DeleteProduct(id);
       return RedirectToAction("Index");
    }
-   
+
 }
