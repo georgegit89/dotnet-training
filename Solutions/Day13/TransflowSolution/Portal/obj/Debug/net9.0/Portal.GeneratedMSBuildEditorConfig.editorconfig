@@ -20,8 +20,16 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/development workspace/Nihilent/Training/dotnet/MyLearning/Solutions/Day13/TransflowSolution/Portal/Views/Auth/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/development workspace/Nihilent/Training/dotnet/MyLearning/Solutions/Day13/TransflowSolution/Portal/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/development workspace/Nihilent/Training/dotnet/MyLearning/Solutions/Day13/TransflowSolution/Portal/Views/Auth/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/development workspace/Nihilent/Training/dotnet/MyLearning/Solutions/Day13/TransflowSolution/Portal/Views/Auth/Register.cshtml]
