@@ -11,9 +11,9 @@ public class RegisterService : IRegisterService
       _registerRepository = registerRepository;
    }
 
-   public void RegisterUser(UserRegistration userRegistration)
+   public void RegisterUser(User userRegistration)
    {
-      var user = new UserRegistration
+      var user = new User
       {
          FirstName = userRegistration.FirstName,
          LastName = userRegistration.LastName,
@@ -23,9 +23,9 @@ public class RegisterService : IRegisterService
       _registerRepository.RegisterUser(user);
    }
 
-   public void UpdateUser(string email, UserRegistration updatedUserRegistration)
+   public void UpdateUser(string email, User updatedUserRegistration)
    {
-      var updatedUser = new UserRegistration
+      var updatedUser = new User
       {
          FirstName = updatedUserRegistration.FirstName,
          LastName = updatedUserRegistration.LastName,

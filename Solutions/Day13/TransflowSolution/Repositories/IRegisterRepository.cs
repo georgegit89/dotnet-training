@@ -5,8 +5,8 @@ using Entities;
 
 public interface IRegisterRepository
 {
-   void RegisterUser(UserRegistration user);
-   void UpdateUser(string email, UserRegistration updatedUser);
+   void RegisterUser(User user);
+   void UpdateUser(string email, User updatedUser);
    void DeleteUser(string email);
 
    

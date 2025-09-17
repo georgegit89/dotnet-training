@@ -1,5 +1,5 @@
 namespace Entities;
-public class UserRegistration
+public class User
 {
    public string FirstName { get; set; }
    public string LastName { get; set; }

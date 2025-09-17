@@ -3,19 +3,19 @@ namespace Repositories;
 using Entities;
 public class RegisterRepository : IRegisterRepository
 {
-   public IEnumerable<UserRegistration> GetAllUsers()
+   public IEnumerable<User> GetAllUsers()
    {
       return JSONRegisterationManager.LoadUsers();
    }
 
-   public void RegisterUser(UserRegistration user)
+   public void RegisterUser(User user)
    {
       var users = GetAllUsers().ToList();
       users.Add(user);
       JSONRegisterationManager.SaveUsers(users);
    }
 
-   public void UpdateUser(string email, UserRegistration updatedUser)
+   public void UpdateUser(string email, User updatedUser)
    {
       var users = GetAllUsers().ToList();
       var index = users.FindIndex(u => u.Email == email);
