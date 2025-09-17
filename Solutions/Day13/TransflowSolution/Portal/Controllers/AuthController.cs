@@ -45,6 +45,7 @@ public class AuthController : Controller
          Password = password
       };
       _registerService.RegisterUser(reg);
+      this.Response.Redirect("/Products/Index");
       return View();
    }
 }
