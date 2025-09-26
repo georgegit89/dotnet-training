@@ -1,0 +1,12 @@
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\bin\Debug\net9.0\Entities.deps.json
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\bin\Debug\net9.0\Entities.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\bin\Debug\net9.0\Entities.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\obj\Debug\net9.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\obj\Debug\net9.0\Entities.AssemblyInfoInputs.cache
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\obj\Debug\net9.0\Entities.AssemblyInfo.cs
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\obj\Debug\net9.0\Entities.csproj.CoreCompileInputs.cache
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\obj\Debug\net9.0\Entities.sourcelink.json
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\obj\Debug\net9.0\Entities.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\obj\Debug\net9.0\refint\Entities.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\obj\Debug\net9.0\Entities.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\Entities\obj\Debug\net9.0\ref\Entities.dll
