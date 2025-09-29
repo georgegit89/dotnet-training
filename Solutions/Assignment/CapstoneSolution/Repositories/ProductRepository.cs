@@ -1,8 +1,17 @@
 ﻿namespace Repositories;
+
 using Entities;
+using MongoDB.Driver;
+using MongoDB.Bson;
 public class ProductRepository : IProductRepository
 {
-
+   public IMongoCollection<User> _users;
+   public ProductRepository(string connectionString, string databaseName, string collectionName)
+   {
+      var client = new MongoClient(connectionString);
+      var database = client.GetDatabase(databaseName);
+      _users = database.GetCollection<User>(collectionName);
+   }
    public IEnumerable<Product> GetAllProducts()
    {
       return JSONCatakogueManager.LoadProducts();
