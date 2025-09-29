@@ -1,3 +1,6 @@
+using MongoDB.Driver;
+using Entities;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
