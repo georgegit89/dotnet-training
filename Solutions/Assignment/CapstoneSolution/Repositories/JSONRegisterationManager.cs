@@ -1,6 +1,7 @@
 using System.Text.Json;
 using Entities;
-public static class JSONRegisterationManager
+namespace Repositories;
+public static class JsonRegisterationManager
 {
    private static string GetJsonFilePath() => Path.Combine(Directory.GetCurrentDirectory(), "../Repositories/users.json");
 

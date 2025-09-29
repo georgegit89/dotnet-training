@@ -5,7 +5,7 @@ public class RegisterRepository : IRegisterRepository
 {
    public IEnumerable<User> GetAllUsers()
    {
-      return JSONRegisterationManager.LoadUsers();
+      return JsonRegisterationManager.LoadUsers();
    }
 
    public void RegisterUser(User user)
@@ -15,7 +15,7 @@ public class RegisterRepository : IRegisterRepository
       if (index != -1)
       {
          users.Add(user);
-         JSONRegisterationManager.SaveUsers(users);
+         JsonRegisterationManager.SaveUsers(users);
       }
    }
 

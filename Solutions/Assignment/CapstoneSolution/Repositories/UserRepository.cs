@@ -5,7 +5,7 @@ public class UserRepository : IUserRepository
 {
    public IEnumerable<User> GetAllUsers()
    {
-      return JSONRegisterationManager.LoadUsers();
+      return JsonRegisterationManager.LoadUsers();
    }
 
    public User? GetUserByEmail(string email)
