@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day17\\StateManagmentApp\\StateManagmentApp\\StateManagmentApp.csproj": {}
+  },
+  "projects": {
+    "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day17\\StateManagmentApp\\StateManagmentApp\\StateManagmentApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day17\\StateManagmentApp\\StateManagmentApp\\StateManagmentApp.csproj",
+        "projectName": "StateManagmentApp",
+        "projectPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day17\\StateManagmentApp\\StateManagmentApp\\StateManagmentApp.csproj",
+        "packagesPath": "C:\\Users\\george.james\\.nuget\\packages\\",
+        "outputPath": "C:\\development workspace\\Nihilent\\Training\\dotnet\\MyLearning\\Solutions\\Day17\\StateManagmentApp\\StateManagmentApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\george.james\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

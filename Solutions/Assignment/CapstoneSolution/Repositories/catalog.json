@@ -1,0 +1,24 @@
+[{
+   "Id": 1,
+   "Name": "Item 1",
+   "Description": "Description for Item 1",
+   "Price": 10.0,
+   "ImageUrl": "item1.png",
+   "InStock": false
+},
+{
+   "Id": 2,
+   "Name": "Item 2",
+   "Description": "Description for Item 2",
+   "Price": 20.0,
+   "ImageUrl": "item2.png",
+   "InStock": false
+},
+{
+   "Id": 3,
+   "Name": "Item 3",
+   "Description": "Description for Item 3",
+   "Price": 15.0,
+   "ImageUrl": "item3.png",
+   "InStock": false
+}]

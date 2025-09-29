@@ -11,8 +11,12 @@ public class RegisterRepository : IRegisterRepository
    public void RegisterUser(User user)
    {
       var users = GetAllUsers().ToList();
-      users.Add(user);
-      JSONRegisterationManager.SaveUsers(users);
+      var index = users.FindIndex(u => u.Email == email);
+      if (index != -1)
+      {
+         users.Add(user);
+         JSONRegisterationManager.SaveUsers(users);
+      }
    }
 
    public void UpdateUser(string email, User updatedUser)
