@@ -5,50 +5,33 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 public class ProductRepository : IProductRepository
 {
-   public IMongoCollection<User> _users;
+   public readonly IMongoCollection<Product> products;
    public ProductRepository(string connectionString, string databaseName, string collectionName)
    {
       var client = new MongoClient(connectionString);
       var database = client.GetDatabase(databaseName);
-      _users = database.GetCollection<User>(collectionName);
+      _products = database.GetCollection<User>(collectionName);
    }
-   public IEnumerable<Product> GetAllProducts()
+   public async Task<IEnumerable<Product>> GetAllProducts()
    {
-      return JSONCatakogueManager.LoadProducts();
+      await _products.Find(_ => true).ToListAsync();
    }
-
-   public Product? GetProductById(int id)
+   public async Task<Product> GetProductById(string id)
    {
-      List<Product> products = GetAllProducts().ToList();
-      return products.FirstOrDefault(p => p.Id == id);
+      await _products.Find(product => product.id == id).FirstOrDefaultAsync();
    }
-
-   public void AddProduct(Product product)
+   public async Task AddUser(Product product)
    {
-      List<Product> products = GetAllProducts().ToList();
-      products.Add(product);
-      JSONCatakogueManager.SaveProducts(products);
+      await _products.insertOneAsync(product);
    }
 
-   public void UpdateProduct(int id, Product updatedProduct)
+   public async Task UpdateProduct(int id, Product updatedProduct)
    {
-      var _products = GetAllProducts().ToList();
-      var index = _products.FindIndex(p => p.Id == id);
-      if (index != -1)
-      {
-         _products[index] = updatedProduct;
-         JSONCatakogueManager.SaveProducts(_products);
-      }
+     await _products.ReplaceOneAsync()
    }
 
-   public void DeleteProduct(int id)
+   public async Task DeleteProduct(int id)
    {
-      var _products = GetAllProducts().ToList();
-      var product = _products.FirstOrDefault(p => p.Id == id);
-      if (product != null)
-      {
-         _products.Remove(product);
-         JSONCatakogueManager.SaveProducts(_products);
-      }
+      awair _products.DeleteOneAsyn(product => product.id == id);
    }
 }

@@ -6,16 +6,14 @@ using Entities;
 using System.Collections.Generic;
 public class UserRepository : IUserRepository
 {
-   public IMongoCollection<User> _users;
-   public IEnumerable<User> GetAllUsers()
+   private readonly IMongoCollection<User> _collection;
+   public IAsyncEnmerable<User> GetAllUsers()
    {
-      return JsonRegisterationManager.LoadUsers();
+      return await _collection.ToListAsync();
    }
-   public UserRepository(string connectionString, string databaseName, string collectionName)
+   public UserRepository(IMongoDatabase database)
    {
-      var client = new MongoClient(connectionString);
-      var database = client.GetDatabase(databaseName);
-      _users = database.GetCollection<User>(collectionName);
+      _collection = database.GetCollection<User>("training");
    }
    public User? GetUserByEmail(string email)
    {
