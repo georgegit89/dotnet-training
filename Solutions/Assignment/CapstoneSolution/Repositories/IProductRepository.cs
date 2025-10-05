@@ -6,9 +6,9 @@ public interface IProductRepository
 {
    
    Task<List<Product>> GetAllProducts();
-   Task<Product?> GetProductById(int id);
+   Task<Product?> GetProductById(string id);
    Task AddProduct(Product product);
-   Task UpdateProduct(int id, Product updatedProduct);
-   Task DeleteProduct(int id);
+   Task UpdateProduct(string id, Product updatedProduct);
+   Task DeleteProduct(string id);
 
 }

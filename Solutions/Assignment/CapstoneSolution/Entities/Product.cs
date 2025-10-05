@@ -1,8 +1,14 @@
 ﻿namespace Entities;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 public class Product
 {
-   public int Id { get; set; }
+   [BsonId]
+   [BsonRepresentation(BsonType.ObjectId)]
+   [BsonElement("Id")]
+   public string? _Id { get; set; }
+   public string Id { get; set; }
    public string Name { get; set; }
    public decimal Price { get; set; }
    public string Description { get; set; }

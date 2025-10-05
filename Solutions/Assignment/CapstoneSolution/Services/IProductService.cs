@@ -4,8 +4,8 @@ using Entities;
 public interface IProductService
 {
    Task<List<Product>> GetAllAsync();
-   Task<Product?> GetByIdAsync(int id);
+   Task<Product?> GetByIdAsync(string id);
    Task CreateAsync(Product product);
-   Task UpdateAsync(int id, Product product);
-   Task DeleteAsync(int id);
+   Task UpdateAsync(string id, Product product);
+   Task DeleteAsync(string id);
 }

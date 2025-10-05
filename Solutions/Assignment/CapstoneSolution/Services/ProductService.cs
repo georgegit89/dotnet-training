@@ -13,8 +13,8 @@ public class ProductService : IProductService
     }
 
     public Task<List<Product>> GetAllAsync() => _repo.GetAllProducts();
-    public Task<Product?> GetByIdAsync(int id) => _repo.GetProductById(id);
+    public Task<Product?> GetByIdAsync(string id) => _repo.GetProductById(id);
     public Task CreateAsync(Product product) => _repo.AddProduct(product);
-    public Task UpdateAsync(int id, Product product) => _repo.UpdateProduct(id, product);
-    public Task DeleteAsync(int id) => _repo.DeleteProduct(id);
+    public Task UpdateAsync(string id, Product product) => _repo.UpdateProduct(id, product);
+    public Task DeleteAsync(string id) => _repo.DeleteProduct(id);
 }

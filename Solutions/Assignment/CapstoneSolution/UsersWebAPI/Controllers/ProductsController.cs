@@ -19,7 +19,7 @@ public class ProductsController : ControllerBase
         Ok(await _service.GetAllAsync());
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> Get(int id) =>
+    public async Task<IActionResult> Get(string id) =>
         Ok(await _service.GetByIdAsync(id));
 
     [HttpPost]

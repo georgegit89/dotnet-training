@@ -36,21 +36,23 @@ public class ProductRepository : IProductRepository
       }
    }
 
-   public async Task<Product> GetProductById(int id) =>
-      await _products.Find(product => product.Id == id).FirstOrDefaultAsync();
-
    public async Task AddProduct(Product product) =>
       await _products.InsertOneAsync(product);
 
-   public async Task UpdateProduct(int id, Product updatedProduct) =>
+   public async Task UpdateProduct(string id, Product updatedProduct) =>
      await _products.ReplaceOneAsync(p => p.Id == id, updatedProduct);
 
-   public async Task DeleteProduct(int id) =>
+   public async Task DeleteProduct(string id) =>
       await _products.DeleteOneAsync(product => product.Id == id);
 
    async Task<List<Product>> IProductRepository.GetAllProducts()
    {
-      Console.WriteLine("Hello from GetAllProducts in ProductRepository" + _products.Find(_ => true).ToListAsync());
+      Console.WriteLine("Hello from GetAllProducts in ProductRepository" + _products.Find(_ => true).ToListAsync().IsCompletedSuccessfully);
       return await _products.Find(_ => true).ToListAsync();
+   }
+
+   public async Task<Product?> GetProductById(string id)
+   {
+      return await _products.Find(product => product.Id == id).FirstOrDefaultAsync();
    }
 }
