@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDBSettings"));
+builder.Services.AddSingleton<IProductService, ProductService>();
 builder.Services.AddSingleton<IProductRepository, ProductRepository>(options =>
 {
     var settings = builder.Configuration.GetSection("MongoDBSettings").Get<MongoDbSettings>();
@@ -24,7 +25,7 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-app.MapGet("/product", async (IProductRepository repo) => await repo.GetAllProducts());
+//app.MapGet("/product", async (IProductRepository repo) => await repo.GetAllProducts());
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
