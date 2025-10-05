@@ -5,41 +5,16 @@ using System.Collections.Generic;
 
 public class ProductService : IProductService
 {
-   private readonly IProductRepository _productRepository;
+    private readonly IProductRepository _repo;
 
-   public ProductService(IProductRepository productRepository)
-   {
-      _productRepository = productRepository;
-   }
+    public ProductService(IProductRepository repo)
+    {
+        _repo = repo;
+    }
 
-   public IEnumerable<Product> GetAllProducts()
-   {
-      return _productRepository.GetAllProducts();
-   }
-
-   public Product? GetProductById(int id)
-   {
-      return _productRepository.GetProductById(id);
-   }
-
-   public void DeleteProduct(int id)
-   {
-      _productRepository.DeleteProduct(id);
-   }
-
-   public void AddProduct(Product product)
-   {
-      // you can add business validations here
-      if (string.IsNullOrWhiteSpace(product.Name))
-         throw new ArgumentException("Product name is required");
-
-      if (product.Price <= 0)
-         throw new ArgumentException("Price must be greater than zero");
-
-      _productRepository.AddProduct(product);
-   }
-   public void UpdateProduct(int id, Product updatedProduct)
-   {
-      _productRepository.UpdateProduct(id, updatedProduct);
-   }
+    public Task<List<Product>> GetAllAsync() => _repo.GetAllProducts();
+    public Task<Product?> GetByIdAsync(int id) => _repo.GetProductById(id);
+    public Task CreateAsync(Product product) => _repo.AddProduct(product);
+    public Task UpdateAsync(int id, Product product) => _repo.UpdateProduct(id, product);
+    public Task DeleteAsync(int id) => _repo.DeleteProduct(id);
 }

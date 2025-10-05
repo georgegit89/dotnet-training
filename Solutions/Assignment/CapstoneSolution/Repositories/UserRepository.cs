@@ -6,17 +6,35 @@ using Entities;
 using System.Collections.Generic;
 public class UserRepository : IUserRepository
 {
-   private readonly IMongoCollection<User> _collection;
-   public IAsyncEnmerable<User> GetAllUsers()
+public readonly IMongoCollection<User> _users;
+   public UserRepository(string connectionString, string databaseName)
    {
-      return await _collection.ToListAsync();
+      var client = new MongoClient(connectionString);
+      var database = client.GetDatabase(databaseName);
+      _users = database.GetCollection<User>("User");
    }
-   public UserRepository(IMongoDatabase database)
+   public async Task<IEnumerable<User>> GetAllUsers() =>
+      await _users.Find(_ => true).ToListAsync();
+
+   public async Task<User> GetUserByEmail(string email) => 
+      await _users.Find(user => user.Email == email).FirstOrDefaultAsync();
+   
+   public async Task AddUser(User user) =>
+      await _users.InsertOneAsync(user);
+
+   public async Task UpdateUser(User user) =>
+     await _users.ReplaceOneAsync(u => u.Email == user.Email, user);
+
+   public async Task DeleteUser(User user) =>
+      await _users.DeleteOneAsync(u => u.Email == user.Email);
+
+   public Task UpdateUser(string email, User user)
    {
-      _collection = database.GetCollection<User>("training");
+      throw new NotImplementedException();
    }
-   public User? GetUserByEmail(string email)
+
+   public Task RegisterUser(User user)
    {
-      return GetAllUsers().FirstOrDefault(u => u.Email == email);
+      throw new NotImplementedException();
    }
 }

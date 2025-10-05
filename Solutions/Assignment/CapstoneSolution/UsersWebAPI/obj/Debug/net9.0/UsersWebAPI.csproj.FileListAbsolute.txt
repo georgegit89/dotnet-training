@@ -31,3 +31,15 @@ C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignmen
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\obj\Debug\net9.0\UsersWebAPI.pdb
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\obj\Debug\net9.0\UsersWebAPI.genruntimeconfig.cache
 C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\obj\Debug\net9.0\ref\UsersWebAPI.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\DnsClient.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\SharpCompress.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\Snappier.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\ZstdSharp.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\Entities.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\Repositories.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\Services.dll
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\Entities.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\Repositories.pdb
+C:\development workspace\Nihilent\Training\dotnet\MyLearning\Solutions\Assignment\CapstoneSolution\UsersWebAPI\bin\Debug\net9.0\Services.pdb
